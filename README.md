@@ -2,7 +2,7 @@
 
 Some developer asked me: Can I use React with canvas? Yes, of course you can. But, How do you add canvas to React? Maybe there tons of way to approach it.
 
-This is the component for easily integrating canvas and React components to hep you to use normal JavaScript function to draw anything on canvas.
+This is the component for easily integrating canvas and React components to hep you to use normal JavaScript function to draw anything on canvas. Just like coding in HTML with vanilla JS. 
 
 ## How to use
 
