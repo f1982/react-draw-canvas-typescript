@@ -59,16 +59,16 @@ const create = (number: number, color: any) => {
 
 }
 
-const yellow: any[] = create(800, 'red');
-const red: any[] = create(800, 'red');
+const yellow: any[] = create(800, 'black');
+const red: any[] = create(800, 'black');
 
 export const drawLife = (canvas: HTMLCanvasElement, frame: number) => {
 
   const ctx = canvas.getContext('2d')!;
   // rule(yellow, yellow, 0.5);
   // rule(red, red, 0.2);
-  rule(yellow, red, -0.2);
-  rule(red, yellow, -0.1);
+  rule(yellow, red, -0.1);
+  rule(red, yellow, -0.05);
   
   // clean screen
   // ctx.clearRect(0, 0, canvas.width, canvas.height);
