@@ -19,7 +19,12 @@ function App() {
   }
 
   return (
+    <>
     <DrawCanvas style={{ width: '100%', height: '100vh' }} draw={drawLife} />
+    <div style={{ position:'absolute', top:0, left:0, bottom:0, right:0}}>
+      <h1 style={{color:'#ffffff', fontSize:'10rem', textAlign:'center'}}>ANDY CAO</h1>
+    </div>
+    </>
   );
 }
 

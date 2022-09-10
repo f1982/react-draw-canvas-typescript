@@ -3,7 +3,6 @@ import { useEffect, useRef } from 'react';
 const useDrawCanvas = (
   draw: (canvas: HTMLCanvasElement, frame: number) => void,
 ) => {
-
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -17,7 +16,6 @@ const useDrawCanvas = (
       const needResize = canvas.width !== clientWidth || canvas.height !== clientHeight
 
       if (needResize) {
-        console.log('needResize', needResize);
         const { devicePixelRatio: ratio = 1 } = window
         canvas.width = clientWidth
         canvas.height = clientHeight
@@ -46,6 +44,5 @@ const useDrawCanvas = (
 
   return canvasRef;
 }
-
 
 export default useDrawCanvas;

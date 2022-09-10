@@ -59,7 +59,7 @@ const create = (number: number, color: any) => {
 
 }
 
-const yellow: any[] = create(800, 'black');
+const yellow: any[] = create(800, 'blue');
 const red: any[] = create(800, 'black');
 
 export const drawLife = (canvas: HTMLCanvasElement, frame: number) => {
